@@ -1,14 +1,32 @@
 # ai_sun
 
-A new Flutter package about sun package.
+![totem](https://raw.githubusercontent.com/pdliuw/pdliuw.github.io/master/images/totem_four_logo.jpg)
 
-## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+ai_sum about use CustomPainter painter sun package.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+-----
+
+
+
+| Plugin | Pub | Points | Popularity | Likes |
+|-----|-----|--------|------------|-------|
+|[ai_sun](https://github.com/pdliuw/ai_sun)|[![pub package](https://img.shields.io/pub/v/ai_sun.svg)](https://pub.dev/packages/ai_sun)|[![pub points](https://badges.bar/ai_sun/pub%20points)](https://pub.dev/packages/ai_sun/score)|[![popularity](https://badges.bar/ai_sun/popularity)](https://pub.dev/packages/ai_sun/score)|[![likes](https://badges.bar/ai_sun/likes)](https://pub.dev/packages/ai_sun/score)|
+
+
+
+## Effect
+
+|web-preview|
+|:-|
+|![web](https://github.com/pdliuw/ai_sun/blob/master/gif/ai_sun_web.gif)|
+|:-|
+
+
+## LICENSE
+
+    BSD 3-Clause License
+    
+    Copyright (c) 2020, pdliuw
+    All rights reserved.
+
