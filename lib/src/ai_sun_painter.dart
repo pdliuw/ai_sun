@@ -1,13 +1,14 @@
-import 'package:flutter/widgets.dart';
 import 'dart:math' as math;
+
+import 'package:flutter/widgets.dart';
 
 ///
 /// AiSunPainter
 class AiSunPainter extends CustomPainter {
   final Color color;
-  AiSunPainter.defaultStyle({
-    this.color,
-  }) {}
+  AiSunPainter({
+    required this.color,
+  });
   @override
   void paint(Canvas canvas, Size size) {
     double radius = math.min(size.width, size.height) / 2;
@@ -15,8 +16,7 @@ class AiSunPainter extends CustomPainter {
     double sunRadius = radius / 2;
 
     double shineStrokeWidth = shineRadius / 3 * 2;
-    var center =
-        Offset((size.width / 2).toDouble(), (size.height / 2).toDouble());
+    var center = Offset((size.width / 2).toDouble(), (size.height / 2).toDouble());
 
     var shinePaint = Paint()
       ..style = PaintingStyle.stroke
@@ -26,13 +26,11 @@ class AiSunPainter extends CustomPainter {
     int shineIndex = 0;
     int shineMax = 24;
     double startAngle = 0;
-    double sweepAngle = 0;
     double maxAngle = math.pi * 2;
     double singleSweepAngle = maxAngle / (shineMax * 2);
     while (shineIndex < shineMax) {
       canvas.drawArc(
-        Rect.fromCircle(
-            center: center, radius: radius - (shineStrokeWidth / 2)),
+        Rect.fromCircle(center: center, radius: radius - (shineStrokeWidth / 2)),
         startAngle,
         singleSweepAngle,
         false,
