@@ -20,7 +20,8 @@ class AiSmilePainter extends CustomPainter {
     final radius = math.min(size.width, size.height) / 2;
     final smileRadius = (radius / 8).toDouble();
     final smileWidth = smileRadius;
-    final center = Offset(size.width.toDouble() / 2, size.height.toDouble() / 2);
+    final center =
+        Offset(size.width.toDouble() / 2, size.height.toDouble() / 2);
     // Draw the body
     final paint = Paint()..color = color;
     canvas.drawCircle(center, radius, paint);
@@ -40,12 +41,14 @@ class AiSmilePainter extends CustomPainter {
     );
     // Draw the eyes
     canvas.drawCircle(
-      Offset(center.dx.toDouble() - radius / 2, center.dy.toDouble() - radius / 2),
+      Offset(
+          center.dx.toDouble() - radius / 2, center.dy.toDouble() - radius / 2),
       smileRadius,
       Paint(),
     );
     canvas.drawCircle(
-      Offset(center.dx.toDouble() + radius / 2, center.dy.toDouble() - radius / 2),
+      Offset(
+          center.dx.toDouble() + radius / 2, center.dy.toDouble() - radius / 2),
       smileRadius,
       Paint(),
     );

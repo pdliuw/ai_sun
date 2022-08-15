@@ -18,7 +18,8 @@ class AiSimpleSunPainter extends CustomPainter {
     double sunRadius = radius / 2;
 
     double shineStrokeWidth = shineRadius / 3 * 2;
-    var center = Offset((size.width / 2).toDouble(), (size.height / 2).toDouble());
+    var center =
+        Offset((size.width / 2).toDouble(), (size.height / 2).toDouble());
 
     var shinePaint = Paint()
       ..style = PaintingStyle.stroke
@@ -32,7 +33,8 @@ class AiSimpleSunPainter extends CustomPainter {
     double singleSweepAngle = maxAngle / (shineMax * 2);
     while (shineIndex < shineMax) {
       canvas.drawArc(
-        Rect.fromCircle(center: center, radius: radius - (shineStrokeWidth / 2)),
+        Rect.fromCircle(
+            center: center, radius: radius - (shineStrokeWidth / 2)),
         startAngle,
         singleSweepAngle / 3,
         false,
